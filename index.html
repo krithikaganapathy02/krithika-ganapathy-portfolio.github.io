@@ -11,7 +11,7 @@
 
     <header>
         <nav>
-            <div class="logo">Krithika's Portfolio</div>
+            <div class="logo"><a href="#about">Krithika's Portfolio</a></div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#technical">Technical Work</a></li>
@@ -27,20 +27,21 @@
             <h1>Krithika Ganapathy</h1>
             <h2>Researcher</h2>
             
-            <p class="hero-bio">
-                I hold a Bachelor’s in Computer Science and Engineering, and I recently completed an MSc in Media and Communications (Data & Society) at the London School of Economics with Distinction. I currently work as a Data & Analytics Graduate (Experimentation Analyst) at Sky in London. Across my academic and industry work, I’m interested in how commercial AI systems shape people’s privacy, behaviour, perceptions, and trust.
-                Research Interests:
+            <p class="hero-bio" style="text-align:justify;">
+                I hold a Bachelor’s in Computer Science and Engineering from Anna University, and I recently completed an MSc in Media and Communications (Data & Society) at the London School of Economics with Distinction. I currently work as a Data & Analytics Graduate (Experimentation Analyst) at Sky in London. Across my academic and industry work, I’m interested in studying how commercial AI systems shape people’s privacy, behaviour, perceptions, and trust.
             </p>
+            <p class="hero-research">Research Interests:</p>
             
             <div class="interests-container">
                 <span class="tag tag-interest">AI systems technical design</span>
                 <span class="tag tag-interest">Human-AI interaction</span>
-                <span class="tag tag-interest">Commercialisation</span>
+                <span class="tag tag-interest">HCI</span>
+                <span class="tag tag-interest">Commercialization</span>
                 <span class="tag tag-interest">Trust, privacy, behaviour</span>
             </div>
             
             <p class="hero-footer">
-                Below, I’ve organised my work into technical, creative, and interpretive projects that have shaped my current research interests.
+                Below, I’ve organised my work into technical, creative, and interpretive projects that have helped shape my research interests.
             </p>
         </div>
     </section>
@@ -55,26 +56,44 @@
                     <span class="tag tag-technical">Technical</span>
                     <span class="tag tag-creative">Creative</span>
                 </div>
-                <p class="meta">Year: 202X | Role: Lead Researcher</p>
-                <p>An exploration of [Topic]. This project combines technical implementation with creative expression.</p>
-                
+            
+                <p class="meta">Anna University · 2024</p>
+            
+                <p style="justify-content: center;">
+                    Trained a model to turn text prompts into Khan Academy-style educational videos using a novel multimodal
+                    architecture. Developed a workflow in which a model translates problem descriptions into animation scripts and
+                    corresponding narration, using a synthetic data pipeline and automated quality checks to ensure that
+                    visualizations and verbal explanations remain aligned and error-free. Used this curated synthetic dataset to
+                    train the model through SFT and DPO, improving the reliability of both code generation and explanatory narration.
+                </p>
+            
                 <div class="video-container">
-                    <p><em>[Video Placeholder: Put your .mp4 file here later]</em></p>
-                    </div>
-                
-                <div class="card-actions">
-                    <a href="#" class="btn btn-secondary">Open PDF Document</a>
+                    <!-- Local MP4 embed (option 1) -->
+                    <video class="project-video" controls>
+                        <source src="videos/tavgen-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+            
                 </div>
             </div>
-
+            
             <div class="card">
                 <div class="card-header">
-                    <h3>Present Industry Role</h3>
+                    <h3>Data &amp; Analytics Graduate (Experimentation Analyst)</h3>
                     <span class="tag tag-technical">Technical</span>
                 </div>
-                <p class="meta">Present | Role: [Your Role]</p>
-                <p>Description of your current work in the industry, focusing on technical achievements and research methodologies.</p>
+            
+                <p class="meta">Sky · Present</p>
+            
+                <p>
+                    Built a data-validation pipeline across two Sky analytics platforms to improve the reliability of digital
+                    marketing and experimentation metrics. Migrated legacy Excel workflows into an Airtable dashboard for
+                    real-time test visibility. Partnering with Meta to apply advanced ad analytics for consumer insights, and
+                    working with agencies to explore AI search markets and ad relevance. Designing 2026 experimentation strategies
+                    across Sky products to understand behaviour and maximise ROI.
+                </p>
             </div>
+            
         </div>
     </section>
 
@@ -82,24 +101,59 @@
         <div class="container">
             <h2 class="section-title">Creative Work</h2>
 
-            <div class="card-grid">
-                <div class="card">
-                    <div class="card-header">
-                        <h3>The Hindu</h3>
-                        <span class="tag tag-creative">Creative</span>
-                    </div>
-                    <p>Journalistic and creative contributions.</p>
-                    <a href="#" class="btn-text">Read Article &rarr;</a>
+            <div class="card">
+                <div class="card-header">
+                    <h3>The Hindu</h3>
+                    <span class="tag tag-creative">Creative</span>
                 </div>
+            
+                <p class="meta">Data Journalism Intern · 2023</p>
+            
+                <p>Worked with The Hindu’s Data Team to develop data-driven stories that analysed social and policy issues using quantitative evidence. Conducted web scraping and data analysis to identify patterns and trends, highlighting risks and opportunities in international and national contexts. Designed charts and interactive visualisations in Tableau and Flourish to communicate complex findings to a broad readership. Produced numerically backed pieces translating raw data into clear, accessible insights for public engagement.</p>
+            
+                <a href="https://www.thehindu.com/profile/author/krithika--ganapathy-19922/" 
+                   class="btn-text" target="_blank" rel="noopener noreferrer">
+                    Author page &rarr;
+                </a>
+                <br></br>
+                <p><strong>Key articles (PDF):</strong></p>
+                <a href="pdfs/hindu-chandrayaan3.pdf" class="btn-text" target="_blank" rel="noopener noreferrer">
+                    Chandrayaan-3 mission: how tough is it to land on the Moon? (PDF) &rarr;
+                </a>
+                <a href="pdfs/hindu-jk-peace.pdf" 
+                    class="btn-text" target="_blank" rel="noopener noreferrer">
+                    Claims of peace in Jammu and Kashmir amid continuing terror-related deaths (PDF) &rarr;
+                </a>
 
-                <div class="card">
-                    <div class="card-header">
-                        <h3>The Times of India</h3>
-                        <span class="tag tag-creative">Creative</span>
-                    </div>
-                    <p>Featured publications and articles.</p>
-                    <a href="#" class="btn-text">Read Article &rarr;</a>
+            </div>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h3>The Times of India</h3>
+                    <span class="tag tag-creative">Creative</span>
                 </div>
+            
+                <p class="meta">City &amp; Reporting Intern · 2023</p>
+            
+                <p>Investigated civic and political issues through field reporting, interviews, and feature writing, focusing on high-impact stories affecting local communities. Published eight feature articles, including a notable piece on international adoption crimes, featured in the newspaper’s exclusive section. Conducted interviews with diverse domestic and international sources to deepen context, accuracy, and representation. Led an investigative story on a US-based crime case, surfacing findings that drew attention from readers and policymakers.</p>
+            
+                <a href="https://timesofindia.indiatimes.com/toireporter/author-Krithika-Ganapathy-479260054,filterby-3.cms"
+                   class="btn-text" target="_blank" rel="noopener noreferrer">
+                    Author page &rarr;
+                </a>
+                <br></br>
+                <p><strong>Key articles (PDF):</strong></p>
+                <a href="pdfs/toi-two-worlds.pdf" 
+                   class="btn-text" target="_blank" rel="noopener noreferrer">
+                    International Adoption Crime Story in the 70s (PDF) &rarr;
+                </a><br>
+                <a href="pdfs/toi-gap-year.pdf" 
+                   class="btn-text" target="_blank" rel="noopener noreferrer">
+                    India's Gap Year Culture (PDF) &rarr;
+                </a>
+                
+            </div>
+            
             </div>
         </div>
     </section>
@@ -110,41 +164,86 @@
 
             <div class="card">
                 <div class="card-header">
-                    <h3>Master's Thesis</h3>
+                    <h3>Master’s Thesis - UK Graduates Navigating Algorithmic Hiring</h3>
                     <span class="tag tag-interpretive">Interpretive</span>
                 </div>
-                <p class="meta">MSc Research</p>
-                <p>Thematic analysis regarding [Subject]. Explore the grid below.</p>
-                
-                <div class="interactive-grid-placeholder">
-                    <div class="grid-item">Theme A</div>
-                    <div class="grid-item">Theme B</div>
-                    <div class="grid-item">Theme C</div>
-                    <div class="grid-item">Theme D</div>
+            
+                <p class="meta">MSc Research · LSE Media &amp; Communications (Data &amp; Society)</p>
+            
+                <p>
+                    A qualitative study of how recent graduates in the UK navigate algorithmic hiring platforms such as LinkedIn 
+                    and applicant tracking systems (ATS). Using reflexive thematic analysis of in-depth interviews, I examine how 
+                    they understand these systems, try to “win” them, and negotiate the privacy and emotional costs involved. 
+                    Explore the themes below.
+                </p>
+            
+                <!-- 2×2 theme grid -->
+                <div class="interactive-grid-placeholder thesis-themes">
+                    <div class="grid-item active" data-theme="legibility">
+                        <h4>Designing for Algorithmic Legibility</h4>
+                        <p>How graduates co-author with AI tools to “speak the system’s language.”</p>
+                    </div>
+                    <div class="grid-item" data-theme="employability">
+                        <h4>Performing Employability</h4>
+                        <p>Branding, keywording, and content hacks to appear hireable to both humans and algorithms.</p>
+                    </div>
+                    <div class="grid-item" data-theme="networked">
+                        <h4>Networked Advantage</h4>
+                        <p>How elite university brands and forced networking act as another optimisation layer.</p>
+                    </div>
+                    <div class="grid-item" data-theme="boundaries">
+                        <h4>Data Boundaries &amp; Hidden Labour</h4>
+                        <p>The emotional work and ethical trade-offs of constantly feeding platforms with data.</p>
+                    </div>
                 </div>
-
+            
+                <!-- Detail panel that updates when a tile is clicked -->
+                <div id="theme-detail" class="theme-detail">
+                    <!-- Filled by JS; we also initialise it in the script -->
+                </div>
+            
                 <div class="card-actions">
-                    <a href="#" class="btn btn-secondary">Read Full Thesis (PDF)</a>
+                    <a href="pdfs/LSE-Master's-Dissertation.pdf" 
+                       class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        Read Full Thesis Report (PDF)
+                    </a>
                 </div>
             </div>
+            
 
             <div class="card-grid">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Changemakers Research Poster</h3>
+                        <h3>How do students use GenAI for Learning?</h3>
                         <span class="tag tag-interpretive">Interpretive</span>
                     </div>
-                    <a href="#" class="btn-text">View External Poster &rarr;</a>
+                
+                    <p class="meta">Research poster · LSE Changemakers 2024–25</p>
+                
+                    <p style="justify-content: center;">
+                        Worked as a Research Assistant under the LSE Changemakers scheme, investigating students’ use of generative AI 
+                        in learning. Designed and conducted surveys and focus groups to explore how students used GenAI for tasks such as 
+                        summarizing, drafting, and explaining concepts, and how concerns about privacy and university monitoring 
+                        influenced their behaviour. Conducted mixed-methods analysis, combining qualitative coding with basic statistical 
+                        analysis, to identify patterns in students’ trust, perceived risks, and “folk theories” of GenAI tools.
+                    </p>
+                
+                    <a href="https://info.lse.ac.uk/current-students/skills-and-opportunities/assets/documents/Change-makers/research-archive/2024-25/31-POSTER-2024-25-GenAI-use-1.pdf"
+                       class="btn-text" target="_blank" rel="noopener noreferrer">
+                        View poster (PDF) &rarr;
+                    </a>
                 </div>
+                
                 
                 <div class="card">
                     <div class="card-header">
-                        <h3>MSc Essays</h3>
+                        <h3>MSc Media and Communications (Data and Society) Essays</h3>
                         <span class="tag tag-interpretive">Interpretive</span>
                     </div>
-                    <p>Selected essays on computational media theory.</p>
-                    <a href="#" class="btn-text">Download Essay 1 (PDF)</a><br>
-                    <a href="#" class="btn-text">Download Essay 2 (PDF)</a>
+                    <p>Selected essays from my coursework on reimagining and critically analysing technology systems:</p>
+                    <a href="pdfs/MSc-EU-AI-Act.pdf" class="btn-text" target="_blank" rel="noopener noreferrer">EU AI Act: A Comprehensive Analysis (PDF)</a><br>
+                    <a href="pdfs/MSc-Smart-Borders-Reimagined-with-Blockchain-Technology.pdf" class="btn-text" target="_blank" rel="noopener noreferrer">Smart Borders Reimagined with Blockchain (PDF)</a>
+                    <a href="pdfs/MSc-Analysis-of-Applicant-Tracking-Systems.pdf" class="btn-text" target="_blank" rel="noopener noreferrer">Analysis of Applicant Tracking Systems (PDF)</a>
                 </div>
             </div>
         </div>
@@ -153,9 +252,9 @@
     <section id="contact" class="section-pad contact-section">
         <div class="container">
             <h2 class="section-title">Contact</h2>
-            <p>I am available for research collaborations and discussions.</p>
-            <a href="mailto:your.email@example.com" class="btn btn-primary">Email Me</a>
-            <a href="#" class="btn btn-secondary">LinkedIn</a>
+            <p>Thanks for viewing my portfolio, I'm open to research colloborations. Please do reach out if you are interested!</p>
+            <a href="mailto:krithikapriya100.com" class="btn btn-primary">Email Me</a>
+            <a href="https://www.linkedin.com/in/krithikaganapathy/" class="btn btn-primary">LinkedIn</a>
         </div>
     </section>
 
@@ -163,5 +262,71 @@
         <p>&copy; 2025 Krithika Ganapathy</p>
     </footer>
 
+    <script>
+        (function() {
+          const themeData = {
+            legibility: {
+              title: "Designing for Algorithmic Legibility",
+              overview: `Graduates don’t experience AI and ATS as neutral back-end tools. They build informal theories of how these systems work and then write for them. Some treat generative AI as a collaborative writing partner that helps phrase their ideas, while others accept ATS as a flawed but unavoidable gatekeeper they must learn to work around.`,
+              quotes: [
+                `“I will write the narrative. Like I said, I'll always write the narrative of how I want to be... Everything is typed, it's just that instead of me phrasing the lines, it does phrasing the lines for me, but the brainchild of like what has to be everything I think.” – <em>Taylor</em>`,
+                `“It's a flawed system, but I don't know if I think it might be the most viable system at this point.” – <em>Olivia</em>`
+              ]
+            },
+            employability: {
+              title: "Performing Employability",
+              overview: `Here, employability becomes an ongoing performance tuned to platform incentives. Participants describe rewriting experiences, amplifying achievements, and timing their activity so that both recruiters and ranking systems see them as the “right” kind of candidate.`,
+              quotes: [
+                `“LinkedIn you kind of wanna make yourself sound so prepared even if like you maybe you did something that it's quite easy or it's not so complicated, but you wanna make it sound fantastic... today I think it's about selling yourself the best.” – <em>Camille</em>`,
+                `“If you change the URL you can actually view all the jobs that are open within one hour rather than 24 hours… when I know how it works, I quickly understand why others got a job… if you apply by the deadline, they will not review your application because you're too late.” – <em>Chloe</em>`
+              ]
+            },
+            networked: {
+              title: "Networked Advantage",
+              overview: `Alongside algorithms and profiles, social networks and institutional prestige operate like another system to game. Elite university brands open doors more easily, while networking often feels instrumental and compulsory—something done to unlock opportunities rather than build genuine relationships.`,
+              quotes: [
+                `“The brand name itself, definitely. People are like, Oh my gosh, you must know your stuff so well. And I feel like it's a lot easier to get to the final stages as well. Everyone on my course tends to get a job rather quickly.” – <em>Sofia</em>`,
+                `“90% of the situation I feel like I'm forced to. 10% of like, oh, I'm really interested in the work experience... but most of the matches I don't give a .... I just wanted to have a job. So it's more like a force.” – <em>Emily</em>`
+              ]
+            },
+            boundaries: {
+              title: "Data Boundaries & Hidden Labour",
+              overview: `Participants accept a high level of data extraction and constant digital work as the price of access to opportunities, but they still draw lines. They distinguish between “acceptable” and “too intimate” data and experiment with small CV tweaks that blur the line between strategic framing and dishonesty.`,
+              quotes: [
+                `“we come in September... I overheard a friend saying that the people sitting in the library right now are not studying, they're applying for jobs... we haven't even had a our course hasn't even started.” – <em>Lily</em>`,
+                `“I am OK with you using my data, I just can't give financial data, so I think that's where I draw the line. So someone asked me to like put my call on the Internet. I'm just like, no, that's not happening.” – <em>Lily</em>`,
+                `“Of course I did some like a bit of tweaking... I've never done consulting work, but I've applied to like some consulting jobs... I use some consulting wordings for that, but then I try to assess like whether or not this to some extent can work.” – <em>Grace</em>`
+              ]
+            }
+          };
+      
+          const tiles = document.querySelectorAll(".thesis-themes .grid-item");
+          const detail = document.getElementById("theme-detail");
+      
+          function renderTheme(key) {
+            const data = themeData[key];
+            if (!data || !detail) return;
+      
+            detail.innerHTML = `
+              <h4>${data.title}</h4>
+              <p>${data.overview}</p>
+              ${data.quotes.map(q => `<blockquote>${q}</blockquote>`).join("")}
+            `;
+          }
+      
+          tiles.forEach(tile => {
+            tile.addEventListener("click", () => {
+              tiles.forEach(t => t.classList.remove("active"));
+              tile.classList.add("active");
+              const key = tile.dataset.theme;
+              renderTheme(key);
+            });
+          });
+      
+          // Initialise with the first theme
+          renderTheme("legibility");
+        })();
+      </script>
+      
 </body>
 </html>
